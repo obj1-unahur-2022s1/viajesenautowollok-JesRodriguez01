@@ -14,10 +14,9 @@ object gabriela{
 }
 
 object mariela{
-      var viajeMinimo=50
       
    method precioViaje(cliente,km){
-	  return if (km>2){(cliente.precioPorKm()*km)} else{viajeMinimo}
+	  return 50.max(cliente.precioPorKm()*km)
 	}	
 }
 
